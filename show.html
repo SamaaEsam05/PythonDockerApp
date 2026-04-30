@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+    <a href="home.html">Home</a> 
+    <a href="show.html">Show</a> 
+    </nav>
+   <table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
+    {% for user in users %}
+        <tr>
+            <td>{{ user[0] }}</td>
+            <td>{{ user[1] }}</td>
+        </tr>
+        {% endfor %}
+   </table>
+</body>
+</html>
